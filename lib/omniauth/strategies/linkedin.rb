@@ -41,7 +41,8 @@ module OmniAuth
       end
 
       extra do
-        { 'raw_info' => raw_info }
+        { 'raw_info' => raw_info,
+	  'access_token' => access_token }
       end
 
       alias :oauth2_access_token :access_token
